@@ -590,6 +590,88 @@ Transform:
   - {fileID: 425805627}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1112103953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3411037167168066395, guid: 2a294c9c8d4bdfc40b361945f708011b, type: 3}
+  m_PrefabInstance: {fileID: 2793689921675420466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1112103957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112103953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9527bfe67400747a147b5e5d71e4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1193460340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1193460342}
+  - component: {fileID: 1193460341}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1193460341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193460340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7a33a82964e09478533b8615c94c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 6427198995278586090, guid: 9891d6d8bc1247a4e929535c3afeb2ba, type: 3}
+  - {fileID: 405159417282182572, guid: 896a18d05d4cc7041b5b6a1c11cb7399, type: 3}
+  - {fileID: 3411037167168066395, guid: 2a294c9c8d4bdfc40b361945f708011b, type: 3}
+--- !u!4 &1193460342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193460340}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9995184, y: -17.564491, z: 17.20427}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1492258537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 405159417282182572, guid: 896a18d05d4cc7041b5b6a1c11cb7399, type: 3}
+  m_PrefabInstance: {fileID: 7636673037144695114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1492258541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492258537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9527bfe67400747a147b5e5d71e4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1590138454
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +755,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590138454}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1819822191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6427198995278586090, guid: 9891d6d8bc1247a4e929535c3afeb2ba, type: 3}
+  m_PrefabInstance: {fileID: 720546997934680499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1819822195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819822191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9527bfe67400747a147b5e5d71e4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &720546997934680499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -723,12 +822,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6427198995278586090, guid: 9891d6d8bc1247a4e929535c3afeb2ba, type: 3}
       propertyPath: m_Name
-      value: Animal_Cow_Brown
+      value: Brown Cow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6427198995278586090, guid: 9891d6d8bc1247a4e929535c3afeb2ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1819822195}
   m_SourcePrefab: {fileID: 100100000, guid: 9891d6d8bc1247a4e929535c3afeb2ba, type: 3}
 --- !u!1001 &1322023795533189453
 PrefabInstance:
@@ -740,11 +842,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2129208624002732292, guid: 307ad8631709ae14db9ded8dd1854101, type: 3}
       propertyPath: m_Name
-      value: Food_Steak_01
+      value: Steak
       objectReference: {fileID: 0}
     - target: {fileID: 3656981955303247450, guid: 307ad8631709ae14db9ded8dd1854101, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.33
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3656981955303247450, guid: 307ad8631709ae14db9ded8dd1854101, type: 3}
       propertyPath: m_LocalPosition.y
@@ -837,12 +939,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3411037167168066395, guid: 2a294c9c8d4bdfc40b361945f708011b, type: 3}
       propertyPath: m_Name
-      value: Dog_GermanShepherd_01
+      value: Dog
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3411037167168066395, guid: 2a294c9c8d4bdfc40b361945f708011b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1112103957}
   m_SourcePrefab: {fileID: 100100000, guid: 2a294c9c8d4bdfc40b361945f708011b, type: 3}
 --- !u!1001 &7636673037144695114
 PrefabInstance:
@@ -854,7 +959,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405159417282182572, guid: 896a18d05d4cc7041b5b6a1c11cb7399, type: 3}
       propertyPath: m_Name
-      value: Animal_Horse_Black
+      value: Black Horse
       objectReference: {fileID: 0}
     - target: {fileID: 6200100644578959189, guid: 896a18d05d4cc7041b5b6a1c11cb7399, type: 3}
       propertyPath: m_LocalPosition.x
@@ -899,7 +1004,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 405159417282182572, guid: 896a18d05d4cc7041b5b6a1c11cb7399, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1492258541}
   m_SourcePrefab: {fileID: 100100000, guid: 896a18d05d4cc7041b5b6a1c11cb7399, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -913,3 +1021,4 @@ SceneRoots:
   - {fileID: 7636673037144695114}
   - {fileID: 720546997934680499}
   - {fileID: 1322023795533189453}
+  - {fileID: 1193460342}
